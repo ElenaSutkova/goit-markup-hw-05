@@ -63,6 +63,19 @@ ol {
     padding: 0 15px;
 }
 
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
 
 
 
@@ -309,18 +322,6 @@ text-decoration: none;
 .benefits-title {}
 
 
-.visually-hidden {
-    position: absolute;
-    width: 1px;
-    height: 1px;        
-    margin: -1px;
-    border: 0;
-    padding: 0;
-    white-space: nowrap;
-    clip-path: inset(100%);
-    clip: rect(0 0 0 0);
-    overflow: hidden;
-}
 
 .benefits-list {
     list-style-type: none;
@@ -926,7 +927,6 @@ text-decoration: none;
     display: flex;
     justify-content: center;
     align-items: center;
-    transition-duration: 250ms;
     transition: 
         background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
         border 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -965,7 +965,7 @@ text-decoration: none;
     font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.32px;
-    margin-top: 72px;
+    margin-top: 48px;
     margin-bottom: 16px;}
 
 .modal-form {}
@@ -1060,4 +1060,50 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
  .modal-form-comment:focus{
     border: 1px solid var(--main-brand-cl);
+}
+
+/* Modal Agreement */
+.modal-form-agreement {
+    display: flex;
+    align-items: center;
+    margin-bottom: 24px;
+    gap: 8px;
+}
+
+.modal-form-checkbox {}
+
+.modal-form-custom-checkbox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 16px;
+    height: 16px;
+    border-radius: 2px;
+    border: 1px solid var(--navyblue-modal, rgba(46, 47, 66, 0.40));
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);}
+
+.modal-form-checkbox-icon {
+    opacity: 0;
+}
+
+.modal-form-agreement-desc {
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.48px;
+    color: var(--main-border-customs);
+    user-select: none;
+}
+
+.modal-form-link {
+    color: var(--main-brand-cl);
+}
+
+.modal-form-checkbox:checked + .modal-form-custom-checkbox {
+    border-color: var(--main-brand-cl);
+    background-color: var(--main-brand-cl);
+}
+
+.modal-form-checkbox:checked+.modal-form-custom-checkbox 
+> .modal-form-checkbox-icon {
+    opacity: 1;
 }
