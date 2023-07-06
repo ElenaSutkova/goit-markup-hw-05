@@ -624,7 +624,9 @@ text-decoration: none;
 
 /* Second section */
 
-.footer-second-section {} 
+.footer-second-section {
+   
+} 
 
 .footer-text-link {
     font-size: 16px;
@@ -665,6 +667,70 @@ text-decoration: none;
 }
 
 
+
+/**
+  |============================
+  | Footer Subscribe Form
+  |============================
+*/
+
+.footer-third-section {
+    display: flex;
+    
+}
+
+.footer-paragraph {}
+
+.subscribe-form {
+    display: flex;
+    gap: 24px;
+    align-items: center;
+}
+
+.subscribe-form-label {}
+
+.subscribe-input {
+    width: 264px;
+    height: 40px;
+    border-radius: 4px;
+    border: 1px solid var(--main-white-cl);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    background-color: transparent;
+    padding: 8px 16px;
+    outline: transparent;
+    color: var(--main-white-cl);
+    font-size: 12px;
+    line-height: 2;
+    letter-spacing: 0.48px;
+}
+
+.subscribe-input::placeholder {
+    color: var(--main-white-cl);
+}
+
+.subscribe-button {
+    background-color: var(--main-brand-cl);
+    color: var(--main-white-cl);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 16px;
+    margin: 0 auto;
+    padding: 8px 24px;
+    min-width: 165px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.64px;
+}
+
+.subscribe-button:hover {
+    background: var(--main-interaction-cl);
+}
 
 
 
@@ -867,6 +933,9 @@ text-decoration: none;
 
 
 
+
+
+
 /**
   |============================
   | Modal styles
@@ -948,6 +1017,9 @@ text-decoration: none;
 .modal-button:focus .modal-icon {
    fill: var(--main-white-cl);
 }
+
+
+
 
 
 /**
