@@ -708,8 +708,9 @@ text-decoration: none;
     outline: transparent;
     color: var(--main-white-cl);
     font-size: 12px;
-    line-height: 2;
+    line-height: 1.5;
     letter-spacing: 0.48px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
 }
 
 .subscribe-input::placeholder {
@@ -733,6 +734,7 @@ text-decoration: none;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     font-size: 16px;
     line-height: 1.5;
+    font-weight: 500;
     letter-spacing: 0.64px;
 }
 
@@ -741,7 +743,7 @@ text-decoration: none;
 }
 
 .subscribe-icon {
-  
+    margin-left: 16px;
 }
 
 
@@ -987,7 +989,7 @@ text-decoration: none;
         0px 1px 3px 0px rgba(0, 0, 0, 0.12),
         0px 1px 1px 0px rgba(0, 0, 0, 0.14);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    padding: 24px;
+    padding: 72px 24px 24px 24px;
 }
 
 .backdrop.is-hidden .modal {
@@ -1048,7 +1050,7 @@ text-decoration: none;
     font-size: 16px;
     font-weight: 500;
     line-height: 1.5;
-    letter-spacing: 0.32px;
+    letter-spacing: 0.02em;
     margin-top: 48px;
     margin-bottom: 16px;}
 
