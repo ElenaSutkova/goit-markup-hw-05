@@ -675,7 +675,7 @@ text-decoration: none;
 */
 
 .footer-third-section {
-    display: flex;
+    
     
 }
 
@@ -692,6 +692,7 @@ text-decoration: none;
     display: flex;
     gap: 24px;
     align-items: center;
+    
 }
 
 .subscribe-form-label {}
@@ -740,7 +741,7 @@ text-decoration: none;
 }
 
 .subscribe-icon {
-   
+  
 }
 
 
