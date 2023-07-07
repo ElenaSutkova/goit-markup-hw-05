@@ -625,7 +625,7 @@ text-decoration: none;
 /* Second section */
 
 .footer-second-section {
-   
+   margin-right: 80px;
 } 
 
 .footer-text-link {
@@ -679,7 +679,14 @@ text-decoration: none;
     
 }
 
-.footer-paragraph {}
+.footer-paragraph {
+    color: var(--main-white-cl);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.32px;
+    margin-bottom: 16px;
+}
 
 .subscribe-form {
     display: flex;
@@ -730,6 +737,10 @@ text-decoration: none;
 
 .subscribe-button:hover {
     background: var(--main-interaction-cl);
+}
+
+.subscribe-icon {
+   
 }
 
 
