@@ -1205,15 +1205,14 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     color: var(--main-brand-cl);
 }
 
-
-
-.modal-form-checkbox:checked + .modal-form-custom-checkbox 
-> .modal-form-checkbox-icon {
+.modal-form-checkbox:checked+.modal-form-agreement .modal-form-checkbox-icon {
     opacity: 1;
 }
 
 
-.modal-form-checkbox:checked + .modal-form-custom-checkbox {
+
+
+.modal-form-checkbox:checked + .modal-form-agreement .modal-form-custom-checkbox {
     background-color: var(--main-interaction-cl);
     border: none;
     fill: var(--main-light-cl);
